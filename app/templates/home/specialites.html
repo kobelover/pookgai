@@ -1,0 +1,41 @@
+{% extends "home/index.html" %}
+
+{% block header %}
+    {% include "home/hd.html" %}
+{% endblock %}
+{% block content %}
+    <div class="avoid_pagebreak">
+        <h4>
+            MY SPECIALITIES
+        </h4>
+        <ul class="inline-list special first last">
+            <li class="animated fadeInDown">
+                <i class="fi-lightbulb">
+                </i>
+                <div class="pointer hide-for-small-only ">
+                </div>
+                <div class="desc">
+                    Logo Design
+                </div>
+            </li>
+            <li class="animated fadeInUp">
+                <i class="fi-page-multiple">
+                </i>
+                <div class="pointer hide-for-small-only second">
+                </div>
+                <div class="desc">
+                    Branding
+                </div>
+            </li>
+            <li class="animated fadeInLeft">
+                <i class="fi-results">
+                </i>
+                <div class="pointer hide-for-small-only ">
+                </div>
+                <div class="desc">
+                    Minimal Web Design
+                </div>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

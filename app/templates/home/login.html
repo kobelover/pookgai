@@ -1,0 +1,64 @@
+{% extends "home/index.html" %}
+{% block css %}
+    <style type="text/css">
+        .login-container{
+            position: relative;
+        }
+        .login-section{
+            width: 500px;
+        }
+        .login-section-tag{
+            position: absolute;left: 35%;margin-top: -20px;margin-left: -40px;
+        }
+        .aui-button-primary{
+            position: absolute;right: 0%;
+        }
+    </style>
+{% endblock %}
+
+{% block header %}
+    {% include "home/hd.html" %}
+{% endblock %}
+
+{% block content %}
+<div class="login-container" >
+	<div class="login-section login-section-tag">
+		<form name="loginform" method="POST" action="/dologin.action" class="aui login-form-container">
+			<fieldset class="compact-form-fields">
+				<legend class="assistive">
+					<span>
+						登录到 后台管理
+					</span>
+				</legend>
+				<div class="field-group
+				">
+					<label id="os_username-label" for="os_username">
+						<u>
+							U
+						</u>
+						用户名
+					</label>
+					<input type="text" name="os_username" id="os_username" class="text"
+					placeholder="用户名" data-focus="0">
+				</div>
+				<div class="field-group">
+					<label id="os_password-label" for="os_password">
+						<u>
+							P
+						</u>
+						密码
+					</label>
+					<input type="password" align="middle" name="os_password" id="os_password" class="password "
+					placeholder="密码">
+				</div>
+				<div class="field-group form-buttons compact-form-buttons">
+					<input id="loginButton" class="aui-button aui-style aui-button-primary"
+					name="login" type="submit" value="登录">
+				</div>
+				<input type="hidden" name="os_destination" value="/index.action">
+			</fieldset>
+		</form>
+	</div>
+</div>
+
+{% endblock %}

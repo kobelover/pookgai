@@ -1,0 +1,23 @@
+{% extends "home/_layout.html" %}
+
+{% block css %}
+    {% for v in page_data.items %}
+        v.css
+    {% endfor %}
+{% endblock %}
+
+
+
+{% block content %}
+    {% for v in page_data.items %}
+        v.html
+    {% endfor %}
+{% endblock %}
+
+
+
+{% block js %}
+    {% for v in page_data.items %}
+        v.js
+    {% endfor %}
+{% endblock %}

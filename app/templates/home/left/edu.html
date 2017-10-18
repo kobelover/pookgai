@@ -1,0 +1,69 @@
+{% extends "home/left/../_layout.html" %}
+
+{% block css %}
+    <link href="{{ url_for('static', filename='css/animate.css') }}" type="text/css"
+        rel="stylesheet" />
+    <link href="{{ url_for('static', filename='css/app.css') }}" type="text/css"
+        rel="stylesheet" />
+{% endblock %}
+
+
+{% block content %}
+<div class="avoid_pagebreak">
+    <h4>
+        EDUCATION
+    </h4>
+    <div class="edu_surround">
+        <div class="edu animated">
+            <div class="edu_item">
+                <div class="date">
+                    From September 2010 to September 2013.
+                </div>
+                <div class="topic">
+                    Industrial Design.
+                </div>
+                <div class="school">
+                    Universidad Antonio de Nebrija. Madrid.
+                </div>
+            </div>
+            <div class="edu_item">
+                <div class="date">
+                    From April 2010 to July 2010
+                </div>
+                <div class="topic">
+                    Advanced Graphic Design.
+                </div>
+                <div class="school">
+                    Aula Creativa, Design School. Madrid.
+                </div>
+            </div>
+            <div class="edu_item">
+                <div class="date">
+                    From April 2010 to July 2010
+                </div>
+                <div class="topic">
+                    Advanced Web Design.
+                </div>
+                <div class="school">
+                    Aula Creativa, Design School. Madrid.
+                </div>
+            </div>
+            <div class="edu_item">
+                <div class="date">
+                    From 2006 to 2010
+                </div>
+                <div class="topic">
+                    4 years of computer programming.
+                </div>
+                <div class="school">
+                    Universidad Antonio de Nebrija. Madrid.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block js %}
+
+
+{% endblock %}

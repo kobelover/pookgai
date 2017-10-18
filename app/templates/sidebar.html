@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>后台管理</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- libraries -->
+    <link href="{{ url_for('static', filename='css/lib/font-awesome.css') }}" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/layout.css') }}" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {% block css %}
+    {% endblock %}
+</head>
+
+
+<body>
+
+
+    <!-- sidebar -->
+    <div id="sidebar-nav">
+        <ul id="dashboard-menu">
+            <li class="active">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="#">
+                    <i class="icon-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="Header.html">
+                    <i class="icon-edit"></i>
+                    <span>Header</span>
+
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-toggle" href="#">
+                    <i class="icon-edit"></i>
+                    <span>Right</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="user-list.html">User list</a></li>
+                    <li><a href="new-user.html">New user form</a></li>
+                    <li><a href="user-profile.html">User profile</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="dropdown-toggle" href="#">
+                    <i class="icon-edit"></i>
+                    <span>Left</span>
+                    <i class="icon-chevron-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="form-showcase.html">Form showcase</a></li>
+                    <li><a href="form-wizard.html">Form wizard</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="personal-info.html">
+                    <i class="icon-edit"></i>
+                    <span>Footer</span>
+
+                </a>
+            </li>
+            <li>
+                <a href="calendar.html">
+                    <i class="icon-calendar-empty"></i>
+                    <span>Template</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- end sidebar --
+
+
+	<!-- main container -->
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>>
+
+
+	<!-- scripts -->
+    <script src="{{ url_for('static', filename='js/jquery-latest.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $(".slider-sample2").slider({
+                range: "min",
+                value: 130,
+                min: 1,
+                max: 500
+            });
+            $(".slider-sample3").slider({
+                range: true,
+                min: 0,
+                max: 500,
+                values: [ 40, 170 ],
+            });
+
+
+        });
+    </script>
+
+</body>
+    {% block js %}
+
+    {% endblock %}
+</html>

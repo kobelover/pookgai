@@ -1,0 +1,63 @@
+{% extends "home/index.html" %}
+
+{% block header %}
+    {% include "home/hd.html" %}
+{% endblock %}
+
+{% block content %}
+    <div class="avoid_pagebreak">
+    <h4>
+        Recognitions
+    </h4>
+    <div class="row recognitions">
+        <div class="large-12 small-12 columns  animated fadeIn">
+            <div class="row">
+                <div class="large-3 medium-3 small-4 columns">
+                    <div class="position">
+                        1-3
+                    </div>
+                    <img src="{{ url_for("static", filename="img/ribbon.svg") }}" width="100"
+                    height="131" alt="Remus Logo Design." class="ribbon">
+                </div>
+                <div class="large-9 medium-9 small-8 columns">
+                    <div class="recog_data">
+                        <div class="title">
+                            Remus Logo Design.
+                        </div>
+                        <div class="desc">
+                            Internal contest. One of the three finalists.
+                        </div>
+                        <div class="place">
+                            Universidad Antonio de Nebrija. Madrid
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="large-12 small-12 columns end animated fadeIn">
+            <div class="row">
+                <div class="large-3 medium-3 small-4 columns">
+                    <div class="position">
+                        2-15
+                    </div>
+                    <img src="{{ url_for("static", filename="img/ribbon.svg") }}" width="100"
+                    height="131" alt="Vino de Toro Label Design." class="ribbon">
+                </div>
+                <div class="large-9 medium-9 small-8 columns">
+                    <div class="recog_data">
+                        <div class="title">
+                            Vino de Toro Label Design.
+                        </div>
+                        <div class="desc">
+                            National contest. One of the 15 finalists.
+                        </div>
+                        <div class="place">
+                            Vino de Toro.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "home/index.html" %}
+
+{% block header %}
+    {% include "home/hd.html" %}
+{% endblock %}
+{% block content %}
+    <div class="avoid_pagebreak">
+        <h4>
+            LANGUAGE SKILLS
+        </h4>
+        <div class="row lang">
+            <div class="large-4 medium-4 small-6 columns">
+                <ul data-pie-id="lang1" class="pie_desc" data-options='{"donut_inner_ratio":"0.8"}'>
+                    <li data-value="100">
+                        <div class="lang_info">
+                            <span class="lang_name">
+                                Spanish
+                            </span>
+                            <span class="lang_level">
+                                Mother Language
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                <div id="lang1" class="pie nostroke animated bounceIn">
+                </div>
+            </div>
+            <div class="large-4 medium-4 small-6 columns">
+                <ul data-pie-id="lang2" class="pie_desc">
+                    <li data-value="75">
+                        <div class="lang_info">
+                            <span class="lang_name">
+                                English
+                            </span>
+                            <span class="lang_level">
+                                Advanced Level
+                            </span>
+                        </div>
+                    </li>
+                    <li data-value="25">
+                    </li>
+                </ul>
+                <div id="lang2" class="pie  animated bounceIn">
+                </div>
+            </div>
+            <div class="large-4 medium-4 small-6 columns">
+                <ul data-pie-id="lang3" class="pie_desc">
+                    <li data-value="25">
+                        <div class="lang_info">
+                            <span class="lang_name">
+                                French
+                            </span>
+                            <span class="lang_level">
+                                Basic Level
+                            </span>
+                        </div>
+                    </li>
+                    <li data-value="75">
+                    </li>
+                </ul>
+                <div id="lang3" class="pie  animated bounceIn">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
